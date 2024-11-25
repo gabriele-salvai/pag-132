@@ -2,11 +2,11 @@ reddito= float(input("insersci il tuo reddito annuo:\t"))
 imponibile=0
 imposta=0
 aliquota1=0
-aliquota2=12/100
-aliquota3=18/100
-aliquota4=27/100
-aliquota5=48/100
-aliquota6=60/100
+aliquota2=0.12
+aliquota3=0.18
+aliquota4=0.27
+aliquota5=0.48
+aliquota6=0.6
 if reddito<=10000:
     imponibile+=reddito
     imposta=imponibile*aliquota1
@@ -113,7 +113,7 @@ else:
     c+=imposta
     print("il quinto imponibile è:",imponibile)
     print("la quinta imposta è:", imposta)
-    imponibile=reddito-10000
+    imponibile=reddito-100000
     imposta=imponibile*aliquota6
     c+=imposta
     print("il sesto imponibile è:",imponibile)
